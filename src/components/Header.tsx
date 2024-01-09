@@ -23,7 +23,7 @@ const HeaderLink = (props: HeaderLinkProps) => {
     return (
         <div className='header-link'>
             <NavLink
-                to={link === 'resume' ? 'https://github.com/ramirezfernando/resume/blob/main/Fernando_Ramirez_Resume.pdf' : `/${link}`}
+                to={link === 'resume' ? 'https://raw.githubusercontent.com/ramirezfernando/resume/main/Fernando_Ramirez_Resume.png' : `/${link}`}
                 style={{ textDecoration: 'none' }}
                 onClick={() => props.handleSelect(props.title)}
             >
