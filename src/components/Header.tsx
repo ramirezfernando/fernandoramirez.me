@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import { useState } from 'react';
 
@@ -20,22 +20,24 @@ interface HeaderLinkProps {
 
 const HeaderLink = (props: HeaderLinkProps) => {
     const link = props.title === 'Fernando Ramirez' ? 'about' : props.title;
-
     return (
         <div className='header-link'>
-        <Link
-            to={link === 'resume' ? 'https://github.com/ramirezfernando/resume/blob/main/Fernando_Ramirez_Resume.pdf' : `/${link}`}
-            style={{ textDecoration: 'none' }}
-            className={props.selected ? 'header-no-link' : ''}
-            onClick={() => props.handleSelect(props.title)}
-        >
-        <h3 style={{ color: props.color, paddingRight: '0.5rem' }}>{props.title}</h3>
-            {props.title !== 'Fernando Ramirez' && (
-            <div className={props.selected ? 'header-dot-active' : 'header-dot'}>
-                <h3 style={{ color: props.color }}>•</h3>
-            </div>
-            )}
-        </Link>
+            <NavLink
+                to={link === 'resume' ? 'https://github.com/ramirezfernando/resume/blob/main/Fernando_Ramirez_Resume.pdf' : `/${link}`}
+                style={{ textDecoration: 'none' }}
+                onClick={() => props.handleSelect(props.title)}
+            >
+                {({ isActive }) => (
+                    <>
+                    <h3 style={{ color: props.color, paddingRight: '0.5rem' }}>{props.title}</h3>
+                    {props.title !== 'Fernando Ramirez' && (
+                        <div className={isActive ? 'header-dot-active' : 'header-dot'}>
+                            <h3 style={{ color: props.color }}>•</h3>
+                        </div>
+                    )}
+                    </>
+                )}
+            </NavLink>
         </div>
     );
     };
