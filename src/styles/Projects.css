@@ -1,0 +1,214 @@
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.ProjectsCard {
+  border: 1px solid #f5f5f5;
+  max-width: 700px;
+  display: flex;
+  padding: 20px 30px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin: 25px;
+  box-shadow: 10px 10px 20px black;
+}
+
+.ProjectsCard a {
+  text-decoration: none;
+}
+
+.ProjectsCard-left {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px 20px 0;
+  align-items: center;
+  min-width: 330px;
+}
+
+.ProjectsCard-left img {
+  border-radius: 3px;
+  max-width: 300px;
+  max-height: 170px;
+  box-shadow: 0.5rem 0.5rem 0.5rem black;
+}
+
+.ProjectsCard-left-info {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  column-gap: 20px;
+  padding: 20px 0;
+}
+
+.ProjectsCard-left-info-left {
+  font-family: 'Ubuntu Mono';
+  font-size: 18px;
+  color: #f5f5f5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ProjectsCard-left-info-right {
+  text-align: left;
+  font-family: 'Varela Round';
+  font-size: 16px;
+  max-width: 140px;
+}
+
+.ProjectsCard-left a:hover {
+  text-decoration: none;
+}
+
+.ProjectsCard-left-buttons {
+  display: flex;
+}
+
+.ProjectsCard-left-buttons-button {
+  width: 60px;
+  height: 25px;
+  border-radius: 25px;
+  border: 1px solid;
+  margin: 0 10px;
+  transition: text-shadow 100ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ProjectsCard-left-buttons-button:hover,
+.ProjectsCard-left-buttons-button:focus {
+  text-shadow: 10px 10px 10px black;
+  box-shadow: 5px 5px 10px black;
+}
+
+.ProjectsCard-left-buttons-button span {
+  font-style: italic;
+  font-size: 14px;
+  font-family: 'Ubuntu Mono';
+  color: #f5f5f5;
+  padding-bottom: 3px;
+}
+
+.ProjectsCard-center {
+  height: 300px;
+  min-width: 1px;
+}
+
+.ProjectsCard-right {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 20px 30px;
+}
+
+.ProjectsCard-right-header {
+  font-size: 30px;
+  font-family: 'Ubuntu Mono';
+  font-weight: bold;
+  color: #f5f5f5;
+  text-shadow: 0.5rem 0.5rem 0.5rem black;
+}
+
+.ProjectsCard-right p {
+  font-size: 15px;
+  color: #f5f5f5;
+  text-align: left;
+  font-family: 'Varela Round';
+}
+
+.ProjectsCard-right a:hover {
+  text-decoration: underline;
+}
+
+.ProjectsCardMobile {
+  border: 1px solid #f5f5f5;
+  max-width: 300px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  align-items: center;
+  border-radius: 5px;
+  margin: 25px;
+  box-shadow: 10px 10px 30px black;
+}
+
+.ProjectsCardMobile a {
+  text-decoration: none;
+}
+
+.ProjectsCardMobile-center {
+  width: 200px;
+  height: 1px;
+  margin: 15px 0;
+}
+
+.ProjectsCardMobile-header {
+  font-size: 24px;
+  font-family: 'Ubuntu Mono';
+  font-weight: bold;
+  color: #f5f5f5;
+  text-shadow: 0.5rem 0.5rem 0.5rem black;
+}
+
+.ProjectsCardMobile p {
+  font-size: 15px;
+  color: #f5f5f5;
+  text-align: left;
+  font-family: 'Varela Round';
+  margin: 0;
+}
+
+.ProjectsCardMobile-grid {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  column-gap: 12px;
+  padding: 15px 0;
+}
+
+.ProjectsCardMobile-grid-left {
+  font-family: 'Ubuntu Mono';
+  font-size: 14px;
+  color: #f5f5f5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ProjectsCardMobile-grid-right {
+  text-align: left;
+  font-family: 'Varela Round';
+  font-size: 12px;
+  max-width: 140px;
+}
+
+.ProjectsCardMobile-buttons {
+  display: flex;
+}
+
+.ProjectsCardMobile-buttons-button {
+  width: 50px;
+  height: 20px;
+  border-radius: 25px;
+  border: 1px solid;
+  margin: 0 10px;
+  transition: text-shadow 100ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ProjectsCardMobile-buttons-button:hover,
+.ProjectsCardMobile-buttons-button:focus {
+  text-shadow: 10px 10px 10px black;
+  box-shadow: 5px 5px 10px black;
+}
+
+.ProjectsCardMobile-buttons-button span {
+  font-style: italic;
+  font-size: 12px;
+  font-family: 'Ubuntu Mono';
+  color: #f5f5f5;
+  padding-bottom: 2px;
+}
