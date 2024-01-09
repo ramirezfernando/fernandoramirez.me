@@ -1,0 +1,74 @@
+.footer-container {
+    display: flex;
+    min-width: 100%;
+    padding: 1rem;
+    align-items: center;
+    height: 2.5rem;
+    font-family: 'Varela Round';
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  .footer-copyright {
+    position: absolute;
+    left: 2rem;
+    display: flex;
+    align-items: center;
+    color: var(--light-gray);
+  }
+  
+  .footer-copyright p {
+    padding: 0px;
+    margin: 0px;
+    font-size: small;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    cursor: default;
+  }
+  
+  .footer-copyright h3 {
+    padding: 0px;
+    margin: 0px;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    cursor: default;
+  }
+  
+  .footer-links-container {
+    position: absolute;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-link {
+    margin: 0px 0.7rem 0px;
+    cursor: pointer;
+    color: var(--light-gray);
+  }
+  
+  .footer-link svg {
+    transition: transform 0.15s;
+    animation-name: fadeIn;
+    animation-duration: 0.3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    fill: var(--light-gray);
+  }
+  
+  .github:hover svg {
+    fill: var(--dark-pink);
+  }
+  
+  .email:hover svg {
+    fill: var(--light-pink);
+  }
+  
+  .linkedin:hover svg {
+    fill: var(--blue);
+  }
