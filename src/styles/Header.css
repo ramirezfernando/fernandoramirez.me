@@ -1,0 +1,51 @@
+.header-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    font-family: 'Varela Round';
+    height: 8rem;
+  }
+  
+.header-container h3 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.header-logo {
+    position: absolute;
+    left: 0px;
+    padding-top: 3rem;
+    padding-left: 5rem;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    padding-top: 3rem;
+}
+
+.header-dot {
+    margin-top: -0.5rem;
+    opacity: 0;
+    transition: opacity 200ms linear;
+}
+
+.header-link:hover .header-dot {
+    opacity: 1;
+}
+
+.header-dot-active {
+    margin-top: -0.5rem;
+    display: block;
+}
+
+.header-no-link {
+    pointer-events: none;
+    cursor: default;
+}
+
+#slash {
+    color: var(--light-gray);
+    padding-right: 0.5rem;
+    cursor: default;
+}
