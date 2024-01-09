@@ -1,0 +1,44 @@
+.contact-container {
+    box-sizing: border-box;
+    height: calc(100vh - 8rem - 35px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Varela Round';
+  }
+  
+.contact-content {
+    max-width: 40rem;
+    text-align: left;
+    padding: 0px 5rem;
+}
+
+.contact-content p {
+    color: var(--white-almost);
+}
+
+.contact-content h2 {
+    color: var(--white-almost);
+    font-family: 'Ubuntu Mono';
+    margin-bottom: 4rem;
+    text-shadow: 0.5rem 0.5rem 0.5rem black;
+}
+
+.contact-content a {
+    text-decoration: none;
+}
+
+.contact-content a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+    .contact-container {
+        height: initial;
+    }
+
+    .contact-content {
+        padding: 5rem 5rem;
+    }
+}
