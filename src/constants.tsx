@@ -3,6 +3,7 @@ import Rankume from '../src/assets/rankume.png'
 import GoGo from '../src/assets/gogo.png'
 import CoCo from '../src/assets/coco.png'
 import RPG from '../src/assets/rpg.png'
+import Savorr from '../src/assets/savorr.png'
 
 export const DARK_GRAY = '#2A2B2E';
 export const PURPLE = '#7247FF';
@@ -112,6 +113,41 @@ export const projectInfo: Project[] = [
         {
             name: 'code',
             link: 'https://github.com/codecoogs/bot',
+        },
+      ],
+    },
+
+    {
+        color: PINK,
+        image: Savorr,
+        name: 'Savorr',
+        type: 'Web app',
+        stack: 'Next.js + TypeScript + Tailwind + Vercel',
+        description: (
+        <span>
+            Built the entire frontend of a web app with the goal of saving users money on their next shopping trip.
+            <br />
+            <br />
+            The project was made under 24 hrs at HackTX with 3 of my friends. Check out the {' '}
+            <a
+                href='https://devpost.com/software/savorr'
+                target='_blank'
+                rel='noopener noreferrer'
+                style={{ color: BLUE }}
+            >
+            Devpost
+            </a>
+            !
+        </span>
+      ),
+      buttons: [
+        {
+            name: 'code',
+            link: 'https://github.com/savorr-org/savorr',
+        },
+        {
+            name: 'website',
+            link: 'https://www.savorr.tech/',
         },
       ],
     },
