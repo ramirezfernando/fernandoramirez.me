@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import Grid from "@mui/material/Grid";
 import Fade from "@mui/material/Fade";
 
-import "../Styles/About.css";
+import "../styles/About.css";
 import { BLUE, YELLOW, PINK } from "../constants";
 import fern from '../assets/fern.jpeg'
 

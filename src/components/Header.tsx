@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import { useState } from 'react';
 
-import '../Styles/Header.css';
+import '../styles/Header.css';
 import {
     PURPLE,
     BLUE,

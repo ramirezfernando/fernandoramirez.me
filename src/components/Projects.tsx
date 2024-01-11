@@ -3,7 +3,7 @@ import { projectInfo, Project, Button } from '../constants';
 import Fade from '@mui/material/Fade';
 import Hidden from '@mui/material/Hidden';
 
-import '../Styles/Projects.css';
+import '../styles/Projects.css';
 
 const Projects: React.FC = () => {
   const projectsCardContainer: React.CSSProperties = {

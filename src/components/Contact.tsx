@@ -1,5 +1,5 @@
 import Fade from "@mui/material/Fade";
-import '../Styles/Contact.css';
+import '../styles/Contact.css';
 import { BLUE, YELLOW, PINK } from '../constants';
 
 const Contact = () => {

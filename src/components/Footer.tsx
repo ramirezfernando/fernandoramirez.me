@@ -3,7 +3,7 @@ import { IoMdMail } from 'react-icons/io';
 import Hidden from '@mui/material/Hidden';
 import Tooltip from '@mui/material/Tooltip';
 
-import '../Styles/Footer.css';
+import '../styles/Footer.css';
 
 const Footer = () => {
     return (
