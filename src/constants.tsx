@@ -6,10 +6,7 @@ import RPG from '../src/assets/rpg.png'
 import Savorr from '../src/assets/savorr.png'
 
 export const DARK_GRAY = '#2A2B2E';
-export const PURPLE = '#7247FF';
-export const PINK = '#FF006E';
-export const BLUE = '#8DEAFF';
-export const YELLOW = '#FFE084';
+export const PURPLE = '#7074dc';
 export const LIGHT_GRAY = '#D9D9D9';
 export const ALMOST_WHITE = '#F5F5F5';
 
@@ -33,7 +30,7 @@ export const projectInfo: Project[] = [
         color: PURPLE,
         image: Rankume,
         name: 'Rankumé (In Progress)',
-        type: 'Full-stack web app',
+        type: 'Web app',
         stack: 'ReactJS + TypeScript + Python + AWS',
         description: (
         <span>
@@ -56,7 +53,7 @@ export const projectInfo: Project[] = [
     },
 
     {
-        color: BLUE,
+        color: PURPLE,
         image: GoGo,
         name: 'GoGo API',
         type: 'REST API',
@@ -68,7 +65,7 @@ export const projectInfo: Project[] = [
                 href='https://www.codecoogs.com/'
                 target='_blank'
                 rel='noopener noreferrer'
-                style={{ color: BLUE }}
+                style={{ color: PURPLE }}
             >
             Code[Coogs]
             </a>
@@ -87,7 +84,7 @@ export const projectInfo: Project[] = [
     },
 
     {
-        color: BLUE,
+        color: PURPLE,
         image: CoCo,
         name: 'CoCo Bot',
         type: 'Discord bot',
@@ -99,7 +96,7 @@ export const projectInfo: Project[] = [
                 href='https://www.codecoogs.com/'
                 target='_blank'
                 rel='noopener noreferrer'
-                style={{ color: BLUE }}
+                style={{ color: PURPLE }}
             >
             Code[Coogs]
             </a>
@@ -118,7 +115,7 @@ export const projectInfo: Project[] = [
     },
 
     {
-        color: PINK,
+        color: PURPLE,
         image: Savorr,
         name: 'Savorr',
         type: 'Web app',
@@ -133,7 +130,7 @@ export const projectInfo: Project[] = [
                 href='https://devpost.com/software/savorr'
                 target='_blank'
                 rel='noopener noreferrer'
-                style={{ color: BLUE }}
+                style={{ color: PURPLE }}
             >
             Devpost
             </a>
@@ -153,7 +150,7 @@ export const projectInfo: Project[] = [
     },
 
     {
-        color: YELLOW,
+        color: PURPLE,
         image: RPG,
         name: 'Turn-Based Role-Playing Game',
         type: 'Game',

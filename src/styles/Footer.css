@@ -62,7 +62,7 @@
   }
   
   .github:hover svg {
-    fill: var(--dark-pink);
+    fill: var(--dark-gray);
   }
   
   .email:hover svg {

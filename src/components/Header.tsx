@@ -4,10 +4,6 @@ import { useState } from 'react';
 
 import '../styles/Header.css';
 import {
-    PURPLE,
-    BLUE,
-    YELLOW,
-    PINK,
     ALMOST_WHITE,
 } from '../constants';
 
@@ -70,7 +66,7 @@ const Header = () => {
             }}>
             <HeaderLink
                 title='about'
-                color={PURPLE}
+                color={ALMOST_WHITE}
                 selected={selectedPage === 'about'}
                 handleSelect={handleSelect}
             />
@@ -79,7 +75,7 @@ const Header = () => {
 
             <HeaderLink
                 title='projects'
-                color={BLUE}
+                color={ALMOST_WHITE}
                 selected={selectedPage === 'projects'}
                 handleSelect={handleSelect}
             />
@@ -88,7 +84,7 @@ const Header = () => {
 
             <HeaderLink
                 title='contact'
-                color={YELLOW}
+                color={ALMOST_WHITE}
                 selected={selectedPage === 'contact'}
                 handleSelect={handleSelect}
             /> 
@@ -97,7 +93,7 @@ const Header = () => {
 
             <HeaderLink
                 title='resume'
-                color={PINK}
+                color={ALMOST_WHITE}
                 selected={selectedPage === 'resume'}
                 handleSelect={handleSelect}
             /> 

@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid";
 import Fade from "@mui/material/Fade";
 
 import "../styles/About.css";
-import { BLUE, YELLOW, PINK, PURPLE } from "../constants";
+import { PURPLE } from "../constants";
 import fern from '../assets/fern.jpeg'
 
 const About = () => {
@@ -59,7 +59,7 @@ const About = () => {
                 {' '} I also work as a teaching assistant for{" "}
                 <a
                   href="https://publications.uh.edu/preview_course_nopop.php?catoid=44&coid=210742"
-                  style={{ color: PINK }}
+                  style={{ color: PURPLE }}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -71,7 +71,7 @@ const About = () => {
                 If I'm not coding away, you can find me working on{" "}
                 <a
                   href="https://techresumeservices.notion.site/techresumeservices/Tech-Resume-Services-eb63d3fd27e045098dfdec60bd8c9ff3"
-                  style={{ color: BLUE }}
+                  style={{ color: PURPLE }}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -83,7 +83,7 @@ const About = () => {
                 <Link
                   to={`/projects`}
                   style={{
-                    color: BLUE,
+                    color: PURPLE,
                   }}
                   className="internal-link"
                 >
@@ -93,7 +93,7 @@ const About = () => {
                 <Link
                   to={`/contact`}
                   style={{
-                    color: YELLOW,
+                    color: PURPLE,
                   }}
                   className="internal-link"
                 >
