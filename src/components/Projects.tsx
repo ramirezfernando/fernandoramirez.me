@@ -2,7 +2,9 @@ import React from 'react';
 import { projectInfo, Project, Button } from '../constants';
 import Fade from '@mui/material/Fade';
 import Hidden from '@mui/material/Hidden';
-
+import {
+  PURPLE,
+} from '../constants';
 import '../styles/Projects.css';
 
 const Projects: React.FC = () => {
@@ -24,7 +26,7 @@ const Projects: React.FC = () => {
 
       return (
         <a key={index} href={link} target='_blank' rel='noopener noreferrer'>
-          <div className='ProjectsCard-left-buttons-button' style={{ borderColor: 'blue' }}>
+          <div className='ProjectsCard-left-buttons-button' style={{ borderColor: PURPLE }}>
             <span>{name}</span>
           </div>
         </a>
@@ -59,11 +61,11 @@ const Projects: React.FC = () => {
         
                   <div className='ProjectsCard-left-info' style={projectDetails}>
                     <span className='ProjectsCard-left-info-left'>type</span>
-                    <span className='ProjectsCard-left-info-right' style={{ color }}>
+                    <span className='ProjectsCard-left-info-right' style={{ color: PURPLE }}>
                       {type}
                     </span>
                     <span className='ProjectsCard-left-info-left'>stack</span>
-                    <span className='ProjectsCard-left-info-right' style={{ color }}>
+                    <span className='ProjectsCard-left-info-right' style={{ color: PURPLE }}>
                       {stack}
                     </span>
                   </div>

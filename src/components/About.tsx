@@ -49,23 +49,16 @@ const About = () => {
                 distributed systems. I love working on projects that have meaningful impact.
                 <br />
                 <br />
-                Currently I work remotely as a software engineer intern for{' '}
-                <a
-                  href="https://download.lootswap.com/"
-                  style={{ color: PURPLE }}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >Lootswap</a>.
-                {' '} I also work as a teaching assistant for{" "}
+                {' '} Currently, I work as a teaching assistant for{" "}
                 <a
                   href="https://publications.uh.edu/preview_course_nopop.php?catoid=44&coid=210742"
                   style={{ color: PURPLE }}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  COSC 3380: Database Systems{" "}
+                  COSC 3380: Database Systems
                 </a>
-                at the University of Houston. I've previously worked as a software engineer intern at Amazon 📦.
+                {" "}at the University of Houston. I've previously worked as a software engineer intern at Amazon 📦.
                 <br />
                 <br />
                 If I'm not coding away, you can find me working on{" "}
@@ -76,7 +69,7 @@ const About = () => {
                   rel="noopener noreferrer"
                 >
                   Tech Resume Services
-                </a>, reaching unreal rank on Fortnite, or finding my new favorite restaurant.
+                </a>, playing video games, or finding my new favorite restaurant.
                 <br />
                 <br />
                 Check out some of my past{" "}

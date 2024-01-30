@@ -1,11 +1,9 @@
 import React from "react";
-import Rankume from '../src/assets/rankume.png'
 import GoGo from '../src/assets/gogo.png'
 import CoCo from '../src/assets/coco.png'
 import RPG from '../src/assets/rpg.png'
-import Savorr from '../src/assets/savorr.png'
 
-export const DARK_GRAY = '#2A2B2E';
+export const DARK_GRAY = '#828494';
 export const PURPLE = '#7074dc';
 export const LIGHT_GRAY = '#D9D9D9';
 export const ALMOST_WHITE = '#F5F5F5';
@@ -27,40 +25,14 @@ export interface Project {
   
 export const projectInfo: Project[] = [
     {
-        color: PURPLE,
-        image: Rankume,
-        name: 'Rankumé (In Progress)',
-        type: 'Web app',
-        stack: 'ReactJS + TypeScript + Python + AWS',
-        description: (
-        <span>
-            Rankumé is a crowd-sourced resume ranking web app thats currenly in progress.
-            <br />
-            <br />
-            Ever wonder how good of a resume you have? Let the community decide. 
-            We hope to add features such as filtering by job industry.
-            <br />
-            <br /> 
-            I'm working closely with two of my friends: a designer, and an engineer.
-        </span>
-      ),
-      buttons: [
-        {
-            name: 'code',
-            link: 'https://github.com/orgs/rankume/repositories',
-        },
-      ],
-    },
-
-    {
-        color: PURPLE,
+        color: DARK_GRAY,
         image: GoGo,
         name: 'GoGo API',
         type: 'REST API',
-        stack: 'Go + Supabase + Vercel',
+        stack: 'Go, Supabase, Vercel',
         description: (
         <span>
-            GoGo (named after Go) is a REST API for{' '}
+            GoGo (named after Go + CoCo, the club's mascot) is a REST API for{' '}
             <a
                 href='https://www.codecoogs.com/'
                 target='_blank'
@@ -69,10 +41,10 @@ export const projectInfo: Project[] = [
             >
             Code[Coogs]
             </a>
-            ,{' '} a coding club at my university.
+            . It is used by the club's website and discord bot.
             <br />
             <br />
-            GoGo API makes it easier for the officers of Code[Coogs] to manage memberships for 200+ members and keep track of events and payments.
+            GoGo API makes it easier for the officers of Code[Coogs] to manage memberships, events, and more for 200+ members!
         </span>
       ),
       buttons: [
@@ -84,14 +56,14 @@ export const projectInfo: Project[] = [
     },
 
     {
-        color: PURPLE,
+        color: DARK_GRAY,
         image: CoCo,
         name: 'CoCo Bot',
         type: 'Discord bot',
-        stack: 'TypeScript + Discord.js',
+        stack: 'TypeScript, Discord.js, Heroku',
         description: (
         <span>
-            CoCo (named after the clubs mascot) is a Discord bot for{' '}
+            CoCo is a Discord bot for{' '}
             <a
                 href='https://www.codecoogs.com/'
                 target='_blank'
@@ -100,10 +72,10 @@ export const projectInfo: Project[] = [
             >
             Code[Coogs]
             </a>
-            ,{' '} a coding club at my university.
+            .
             <br />
             <br />
-            CoCo bot allows over +200 users to verify their membership, view points, and leaderboard. 
+            CoCo bot allows over 200+ users to verify their membership, view points, and leaderboard!
         </span>
       ),
       buttons: [
@@ -113,55 +85,28 @@ export const projectInfo: Project[] = [
         },
       ],
     },
-
     {
-        color: PURPLE,
-        image: Savorr,
-        name: 'Savorr',
-        type: 'Web app',
-        stack: 'Next.js + TypeScript + Tailwind + Vercel',
+        color: DARK_GRAY,
+        image: RPG,
+        name: 'Turn-Based Role-Playing Game',
+        type: 'Game',
+        stack: 'C++, SDL2',
         description: (
         <span>
-            Built the entire frontend of a web app with the goal of saving users money on their next shopping trip.
-            <br />
-            <br />
-            The project was made under 24 hrs at HackTX with 3 of my friends. Check out the {' '}
+            Developed a 2D turn-based battle game that was voted best among 144 students in my {' '}
             <a
-                href='https://devpost.com/software/savorr'
+                href='https://www.coursicle.com/uh/courses/COSC/1437/'
                 target='_blank'
                 rel='noopener noreferrer'
                 style={{ color: PURPLE }}
             >
-            Devpost
+            COSC 1437 
             </a>
-            !
-        </span>
-      ),
-      buttons: [
-        {
-            name: 'code',
-            link: 'https://github.com/savorr-org/savorr',
-        },
-        {
-            name: 'website',
-            link: 'https://www.savorr.tech/',
-        },
-      ],
-    },
-
-    {
-        color: PURPLE,
-        image: RPG,
-        name: 'Turn-Based Role-Playing Game',
-        type: 'Game',
-        stack: 'C++ + SDL2',
-        description: (
-        <span>
-            Developed a 2D turn-based battle game that was voted best among 144 students in my programming course. 
+            {' '} course. 
             <br />
             <br />
             I went above and beyond of the game requirements by making it 2D and 
-            adding features such as view character stats, attack, run, and save progress. 
+            adding features such as view character stats, attack, run, and save progress!
         </span>
       ),
       buttons: [
