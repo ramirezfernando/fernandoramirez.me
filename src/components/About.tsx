@@ -58,7 +58,25 @@ const About = () => {
                 >
                   COSC 3380: Database Systems
                 </a>
-                {" "}at the University of Houston. I've previously worked as a software engineer intern at Amazon 📦.
+                {" "}at the University of Houston. I've previously worked as a software engineer intern at {" "}
+                <a
+                  href="https://aws.amazon.com/"
+                  style={{ color: PURPLE }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Amazon Web Services
+                </a>
+                {" "} on the {" "}
+                <a
+                  href="https://aws.amazon.com/blogs/mt/announcing-aws-cloudtrail-lake-a-managed-audit-and-security-lake/"
+                  style={{ color: PURPLE }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  CloudTrail Lake
+                </a>
+                {" "}team, where I worked on improving the free trial for over 1 million customers!
                 <br />
                 <br />
                 If I'm not coding away, you can find me working on{" "}
