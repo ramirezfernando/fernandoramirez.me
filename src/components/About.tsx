@@ -4,7 +4,9 @@ import Fade from "@mui/material/Fade";
 
 import "../styles/About.css";
 import { PURPLE } from "../constants";
-import fern from '../assets/fern.jpeg'
+import fern from '../assets/fern.jpeg';
+import MicrosoftLogo from '../assets/microsoft.jpg';
+import AWSLogo from '../assets/aws.png';
 
 const About = () => {
   return (
@@ -58,14 +60,28 @@ const About = () => {
                 >
                   COSC 3380: Database Systems
                 </a>
-                {" "}at the University of Houston. I've previously worked as a software engineer intern at {" "}
+                {" "}at the University of Houston. 
+                
+                After graduation, I'll be joining {" "}
+                <a
+                  href="https://www.microsoft.com/en-us/"
+                  style={{ color: PURPLE }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                Microsoft <img id='microsoft-logo' src={MicrosoftLogo}/>
+                </a>
+                {" "}
+                 as a software engineer.
+                
+                I've previously worked as a software engineer intern at {" "}
                 <a
                   href="https://aws.amazon.com/"
                   style={{ color: PURPLE }}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Amazon Web Services
+                  Amazon Web Services <img id='aws-logo' src={AWSLogo}/>
                 </a>
                 {" "} on the {" "}
                 <a
@@ -79,15 +95,7 @@ const About = () => {
                 {" "}team, where I worked on improving the free trial for over 1 million customers!
                 <br />
                 <br />
-                If I'm not coding away, you can find me working on{" "}
-                <a
-                  href="https://techresumeservices.notion.site/techresumeservices/Tech-Resume-Services-eb63d3fd27e045098dfdec60bd8c9ff3"
-                  style={{ color: PURPLE }}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Tech Resume Services
-                </a>, playing video games, or finding my new favorite restaurant.
+                If I'm not coding away, you can find me playing video games, or finding my new favorite restaurant.
                 <br />
                 <br />
                 Check out some of my past{" "}

@@ -27,6 +27,20 @@
   .about-container a:hover {
     text-decoration: underline;
   }
+
+  #microsoft-logo {
+    width: 13px;
+    height: 13px;
+    border-radius: 0;
+    border-width: 0;
+  }
+
+  #aws-logo {
+    width: 16px;
+    height: 16px;
+    border-radius: 0;
+    border-width: 0;
+  }
   
   .internal-link {
     text-decoration: none;
