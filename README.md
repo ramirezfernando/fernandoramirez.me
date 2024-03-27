@@ -1,9 +1,11 @@
-# React + TypeScript + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-# Commands
+## Usage
+1. Install dependencies
 ```
 pnpm install
+```
+2. Run locally
+```
 pnpm run dev
 ```
