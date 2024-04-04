@@ -2,6 +2,7 @@ import React from "react";
 import GoGo from '../src/assets/gogo.png'
 import CoCo from '../src/assets/coco.png'
 import RPG from '../src/assets/rpg.png'
+import ClocTool from '../src/assets/cloc-tool.png'
 
 export const DARK_GRAY = '#828494';
 export const PURPLE = '#7074dc';
@@ -85,6 +86,29 @@ export const projectInfo: Project[] = [
         },
       ],
     },
+
+    {
+      color: DARK_GRAY,
+      image: ClocTool,
+      name: 'Cloc-tool',
+      type: 'Command-line tool',
+      stack: 'Go, Bubbletea, GoReleaser',
+      description: (
+      <span>
+          Command line tool used to count lines of code (CLOC) in a user specified path.
+          <br />
+          <br />
+          Cloc-tool can scan millions of lines of code in seconds and outputs the results in a user-friendly format! Version 1.0.1 is available to MacOS, Linux, and Windows!
+      </span>
+    ),
+    buttons: [
+      {
+          name: 'code',
+          link: 'https://github.com/ramirezfernando/cloc-tool',
+      },
+    ],
+  },
+
     {
         color: DARK_GRAY,
         image: RPG,
