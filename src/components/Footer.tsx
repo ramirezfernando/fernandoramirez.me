@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaReact } from 'react-icons/fa';
 import { IoMdMail } from 'react-icons/io';
 import Hidden from '@mui/material/Hidden';
 import Tooltip from '@mui/material/Tooltip';
@@ -10,7 +10,7 @@ const Footer = () => {
       <div className='footer-container'>
         <Hidden xsDown>
           <div className='footer-copyright'>
-            <p>Made with ❤️ by Fernando</p>
+            <p>Made with <FaReact /> by Fernando</p>
           </div>
         </Hidden>
         <div className='footer-links-container'>
