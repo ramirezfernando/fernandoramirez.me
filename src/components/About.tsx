@@ -47,7 +47,7 @@ const About = () => {
                   👋🏼
                 </span>{" "}
                 I'm Fernando, a senior at the University of Houston studying CS. 
-                I'm interested in anything tech &mdash; especially web dev and
+                I'm interested in anything tech &mdash; especially backend development and
                 distributed systems. I love working on projects that have meaningful impact.
                 <br />
                 <br />
