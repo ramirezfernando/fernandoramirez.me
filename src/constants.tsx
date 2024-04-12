@@ -5,7 +5,7 @@ import RPG from '../src/assets/rpg.png'
 import ClocTool from '../src/assets/cloc-tool.png'
 
 export const DARK_GRAY = '#828494';
-export const PURPLE = '#7074dc';
+export const PURPLE = '#635bff';
 export const LIGHT_GRAY = '#D9D9D9';
 export const ALMOST_WHITE = '#F5F5F5';
 
