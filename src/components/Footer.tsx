@@ -1,4 +1,5 @@
 import { FaLinkedin, FaGithub, FaReact } from 'react-icons/fa';
+import { RiNewspaperLine } from "react-icons/ri";
 import { IoMdMail } from 'react-icons/io';
 import Hidden from '@mui/material/Hidden';
 import Tooltip from '@mui/material/Tooltip';
@@ -51,6 +52,17 @@ const Footer = () => {
           </Tooltip>
         </div>
 
+        <div className='footer-link resume'>
+          <Tooltip title='Resume' placement='top' arrow>
+            <a
+              href='https://raw.githubusercontent.com/ramirezfernando/resume/main/Fernando_Ramirez_Resume.png'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <RiNewspaperLine style={{ animationDelay: '300ms' }} size='1.7rem' />
+            </a>
+          </Tooltip>
+        </div>
         </div>
       </div>
     );

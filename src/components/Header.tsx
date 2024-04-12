@@ -19,7 +19,9 @@ const HeaderLink = (props: HeaderLinkProps) => {
     return (
         <div className='header-link'>
             <NavLink
-                to={link === 'resume' ? 'https://raw.githubusercontent.com/ramirezfernando/resume/main/Fernando_Ramirez_Resume.png' : `/${link}`}
+                to={link === 'blog' ? 'https://blog.fernandoramirez.me/' : `/${link}`}
+                target={link === 'blog' ? '_blank' : ''}
+                rel={link === 'blog' ? 'noopener noreferrer' : ''}
                 style={{ textDecoration: 'none' }}
                 onClick={() => props.handleSelect(props.title)}
             >
@@ -92,9 +94,9 @@ const Header = () => {
             <h3 id='slash'>/</h3>
 
             <HeaderLink
-                title='resume'
+                title='blog'
                 color={ALMOST_WHITE}
-                selected={selectedPage === 'resume'}
+                selected={selectedPage === 'blog'}
                 handleSelect={handleSelect}
             /> 
         </div>
