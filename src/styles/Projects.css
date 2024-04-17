@@ -32,7 +32,6 @@
   border-radius: 3px;
   max-width: 300px;
   max-height: 170px;
-  box-shadow: 0.5rem 0.5rem 0.5rem black;
 }
 
 .ProjectsCard-left-info {
@@ -43,7 +42,6 @@
 }
 
 .ProjectsCard-left-info-left {
-  font-family: 'Ubuntu Mono';
   font-size: 18px;
   color: #f5f5f5;
   display: flex;
@@ -66,27 +64,26 @@
 }
 
 .ProjectsCard-left-buttons-button {
-  width: 60px;
-  height: 25px;
-  border-radius: 25px;
-  border: 1px solid;
-  margin: 0 10px;
-  transition: text-shadow 100ms;
+  width: 100px;
+  display: flex;
+  height: 30px;
+  border-radius: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #f5f5f5;
+  gap: 6px;
+  background-color: var(--light-purple)!important;
 }
 
-.ProjectsCard-left-buttons-button:hover,
-.ProjectsCard-left-buttons-button:focus {
-  text-shadow: 10px 10px 10px black;
-  box-shadow: 5px 5px 10px black;
+.ProjectsCard-left-buttons-button:hover {
+  background-color: var(--dark-purple)!important; 
+  transition: 0.3s;
 }
 
 .ProjectsCard-left-buttons-button span {
-  font-style: italic;
-  font-size: 14px;
-  font-family: 'Ubuntu Mono';
+  font-size: 16px;
+  font-weight: 600;
   color: #f5f5f5;
   padding-bottom: 3px;
 }
@@ -104,17 +101,14 @@
 
 .ProjectsCard-right-header {
   font-size: 30px;
-  font-family: 'Ubuntu Mono';
   font-weight: bold;
   color: #f5f5f5;
-  text-shadow: 0.5rem 0.5rem 0.5rem black;
 }
 
 .ProjectsCard-right p {
   font-size: 15px;
   color: #f5f5f5;
   text-align: left;
-  font-family: 'Varela Round';
 }
 
 .ProjectsCard-right a:hover {
@@ -122,7 +116,7 @@
 }
 
 .ProjectsCardMobile {
-  border: 1px solid #f5f5f5;
+  border: 1px solid var(--dark-gray);
   max-width: 300px;
   box-sizing: border-box;
   display: flex;
@@ -131,7 +125,6 @@
   align-items: center;
   border-radius: 5px;
   margin: 25px;
-  box-shadow: 10px 10px 30px black;
 }
 
 .ProjectsCardMobile a {
@@ -146,10 +139,9 @@
 
 .ProjectsCardMobile-header {
   font-size: 24px;
-  font-family: 'Ubuntu Mono';
+  font-family: "sohne-var", "Helvetica Neue", "Arial", sans-serif;
   font-weight: bold;
   color: #f5f5f5;
-  text-shadow: 0.5rem 0.5rem 0.5rem black;
 }
 
 .ProjectsCardMobile p {
@@ -168,7 +160,6 @@
 }
 
 .ProjectsCardMobile-grid-left {
-  font-family: 'Ubuntu Mono';
   font-size: 14px;
   color: #f5f5f5;
   display: flex;
@@ -178,36 +169,17 @@
 .ProjectsCardMobile-grid-right {
   text-align: left;
   font-family: 'Varela Round';
+  color: var(--light-purple) !important;
   font-size: 12px;
   max-width: 140px;
 }
 
 .ProjectsCardMobile-buttons {
   display: flex;
-}
-
-.ProjectsCardMobile-buttons-button {
-  width: 50px;
-  height: 20px;
-  border-radius: 25px;
-  border: 1px solid;
-  margin: 0 10px;
-  transition: text-shadow 100ms;
+  height: 34px;
+  border-radius: 16.5px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.ProjectsCardMobile-buttons-button:hover,
-.ProjectsCardMobile-buttons-button:focus {
-  text-shadow: 10px 10px 10px black;
-  box-shadow: 5px 5px 10px black;
-}
-
-.ProjectsCardMobile-buttons-button span {
-  font-style: italic;
-  font-size: 12px;
-  font-family: 'Ubuntu Mono';
-  color: #f5f5f5;
-  padding-bottom: 2px;
+  background-color: var(--light-purple)!important;
 }

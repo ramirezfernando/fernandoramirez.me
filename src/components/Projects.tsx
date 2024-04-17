@@ -2,6 +2,7 @@ import React from 'react';
 import { projectInfo, Project, Button } from '../constants';
 import Fade from '@mui/material/Fade';
 import Hidden from '@mui/material/Hidden';
+import { FaAngleRight } from "react-icons/fa";
 import {
   PURPLE,
 } from '../constants';
@@ -26,8 +27,9 @@ const Projects: React.FC = () => {
 
       return (
         <a key={index} href={link} target='_blank' rel='noopener noreferrer'>
-          <div className='ProjectsCard-left-buttons-button' style={{ borderColor: PURPLE }}>
+          <div className='ProjectsCard-left-buttons-button'>
             <span>{name}</span>
+            <FaAngleRight/>
           </div>
         </a>
       );

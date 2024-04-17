@@ -1,6 +1,6 @@
 .contact-container {
     box-sizing: border-box;
-    height: calc(100vh - 8rem - 35px);
+    min-height: calc(100vh - 8rem - 35px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,9 +20,7 @@
 
 .contact-content h2 {
     color: var(--white-almost);
-    font-family: 'Ubuntu Mono';
     margin-bottom: 4rem;
-    text-shadow: 0.5rem 0.5rem 0.5rem black;
 }
 
 .contact-content a {
