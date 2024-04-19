@@ -3,34 +3,31 @@ import GoGo from '../src/assets/gogo.png'
 import CoCo from '../src/assets/coco.png'
 import RPG from '../src/assets/rpg.png'
 import Ube from '../src/assets/ube.png'
+import { FaGithub, FaBookOpen } from "react-icons/fa";
 
-export const DARK_GRAY = '#828494';
-export const PURPLE = '#635bff';
-export const LIGHT_GRAY = '#D9D9D9';
 export const ALMOST_WHITE = '#F5F5F5';
 
 export interface ButtonType {
+  icon?: React.ReactNode;
   name: string;
   link: string;
 }
 
 export interface Project {
-    color: string;
     image: string;
     name: string;
     type: string;
-    stack: any;
+    stack: string[];
     description: React.ReactNode;
     buttons: ButtonType[];
   }
   
 export const projectInfo: Project[] = [
     {
-        color: DARK_GRAY,
         image: GoGo,
         name: 'GoGo API',
         type: 'REST API',
-        stack: 'Go, Supabase, Vercel',
+        stack: ['Go', 'Supabase', 'Vercel'],
         description: (
         <span>
             GoGo (named after Go + CoCo, the club's mascot) is a REST API for{' '}
@@ -49,18 +46,23 @@ export const projectInfo: Project[] = [
       ),
       buttons: [
         {
-            name: 'code',
-            link: 'https://github.com/codecoogs/gogo',
+          icon: <FaGithub/>,
+          name: 'GitHub',
+          link: 'https://github.com/codecoogs/gogo',
+        },
+        {
+          icon: <FaBookOpen/>,
+          name: 'Docs',
+          link: 'https://docs.codecoogs.com/docs/api/introduction',
         },
       ],
     },
 
     {
-        color: DARK_GRAY,
         image: CoCo,
         name: 'CoCo Bot',
         type: 'Discord bot',
-        stack: 'TypeScript, Discord.js, Heroku',
+        stack: ['TypeScript', 'Discord.js', 'Heroku'],
         description: (
         <span>
             CoCo is a Discord bot for{' '}
@@ -79,18 +81,23 @@ export const projectInfo: Project[] = [
       ),
       buttons: [
         {
-            name: 'code',
-            link: 'https://github.com/codecoogs/bot',
+          icon: <FaGithub/>,
+          name: 'GitHub',
+          link: 'https://github.com/codecoogs/bot',
+        },
+        {
+          icon: <FaBookOpen/>,
+          name: 'Docs',
+          link: 'https://docs.codecoogs.com/docs/bot/introduction',
         },
       ],
     },
 
     {
-      color: DARK_GRAY,
       image: Ube,
       name: 'Ube',
       type: 'Command-line tool',
-      stack: 'Go, Bubbletea, GoReleaser',
+      stack: ['Go', 'Bubbletea', 'GoReleaser'],
       description: (
       <span>
           Ube (ooh-bay) is a program that displays statistics about your code. Ube will show the number of files, and total lines within those files grouped by language.
@@ -101,18 +108,18 @@ export const projectInfo: Project[] = [
     ),
     buttons: [
       {
-          name: 'code',
-          link: 'https://github.com/ramirezfernando/ube',
+        icon: <FaGithub/>,
+        name: 'GitHub',
+        link: 'https://github.com/ramirezfernando/ube',
       },
     ],
   },
 
     {
-        color: DARK_GRAY,
         image: RPG,
         name: 'Fernhelm',
         type: 'Game',
-        stack: 'C++, SDL2',
+        stack: ['C++', 'SDL2'],
         description: (
         <span>
             Fernhelm is a 2D, 2-player local co-op turn-based battle game.
@@ -124,8 +131,9 @@ export const projectInfo: Project[] = [
       ),
       buttons: [
         {
-            name: 'code',
-            link: 'https://github.com/ramirezfernando/fernhelm',
+          icon: <FaGithub/>,
+          name: 'GitHub',
+          link: 'https://github.com/ramirezfernando/fernhelm',
         },
       ],
     },

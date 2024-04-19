@@ -1,10 +1,8 @@
 import { Link } from 'react-router-dom';
 import Grid from "@mui/material/Grid";
 import Fade from "@mui/material/Fade";
-import { Button } from "@/components/ui/button"
 
 import "../styles/About.css";
-import { PURPLE } from "../constants";
 import fern from '../assets/fern.jpeg';
 
 const About = () => {

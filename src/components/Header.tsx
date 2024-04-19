@@ -5,7 +5,7 @@ import { useState } from 'react';
 import '../styles/Header.css';
 import {
     ALMOST_WHITE,
-} from '../constants';
+} from '../data';
 
 interface HeaderLinkProps {
     title: string;
