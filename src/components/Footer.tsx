@@ -3,12 +3,15 @@ import { IoMdMail } from 'react-icons/io';
 import Hidden from '@mui/material/Hidden';
 import { Button } from "@/components/ui/button"
 import { FileText } from 'lucide-react';
-
+import { Separator } from "@/components/ui/separator"
 import '../styles/Footer.css';
 
 const Footer = () => {
     return (
+      <>
+      <Separator className="my-4 w-full" />
       <div className='footer-container'>
+
         <Hidden xsDown>
           <div className='footer-copyright'>
             <p className='items-center'>Made with &nbsp; <FaReact /> &nbsp; by Fernando</p>
@@ -42,6 +45,7 @@ const Footer = () => {
         
         </div>
       </div>
+      </>
     );
   };
   
