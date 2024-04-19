@@ -18,7 +18,7 @@ const Projects: React.FC = () => {
 
   return (
     <Fade in timeout={{ enter: 1200 }}>
-      <div className='projects-container rounded-lg mt-10'>
+      <div className='projects-container mt-10'>
   
             {projectInfo.map((project: Project, index: number) => (
               <React.Fragment key={index}>
@@ -28,7 +28,7 @@ const Projects: React.FC = () => {
                       <div className='flex flex-row gap-2'>
                       {
                         project.stack.map((tech: string, index: number) => (
-                          <Badge variant="secondary" key={index} className='min-w-fit text-lg'>{tech}</Badge>
+                          <Badge variant="secondary" key={index} className='min-w-fit text-lg my-2'>{tech}</Badge>
                         ))
                       }
                       </div>
@@ -38,10 +38,9 @@ const Projects: React.FC = () => {
                     <form>
                       <div className="grid w-full items-center gap-4">
                         <div className="flex flex-col space-y-1.5">
-                          
+                          {project.content}
                         </div>
                         <div className="flex flex-col space-y-1.5">
-                          
                         </div>
                       </div>
                     </form>
@@ -49,7 +48,7 @@ const Projects: React.FC = () => {
                   <CardFooter className="flex gap-2">
                     {project.buttons.map((tech: ButtonType, index: number) => (
                       <a key={index} href={tech.link} target="_blank" rel="noopener noreferrer">
-                        <Button className='gap-3 text-xl'>{tech.icon}{tech.name}</Button>
+                        <Button variant={tech.name === 'GitHub' ? 'outline' : 'default'} className='gap-3 text-xl'>{tech.icon}{tech.name}</Button>
                       </a>
                     ))}
                   </CardFooter>

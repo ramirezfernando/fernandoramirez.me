@@ -19,6 +19,7 @@ export interface Project {
     type: string;
     stack: string[];
     description: React.ReactNode;
+    content: React.ReactNode;
     buttons: ButtonType[];
   }
   
@@ -30,32 +31,26 @@ export const projectInfo: Project[] = [
         stack: ['Go', 'Supabase', 'Vercel'],
         description: (
         <span>
-            GoGo (named after Go + CoCo, the club's mascot) is a REST API for{' '}
-            <a
-                href='https://www.codecoogs.com/'
-                target='_blank'
-                rel='noopener noreferrer'
-            >
-            Code[Coogs]
-            </a>
-            . It is used by the club's website and discord bot.
-            <br />
-            <br />
-            GoGo API makes it easier for the officers of Code[Coogs] to manage memberships, events, and more for 200+ members!
+            A Serverless REST API for {" "} <a href='https://www.codecoogs.com/' target='_blank' rel='noopener noreferrer'>Code[Coogs]</a>.
         </span>
-      ),
-      buttons: [
-        {
-          icon: <FaGithub/>,
-          name: 'GitHub',
-          link: 'https://github.com/codecoogs/gogo',
-        },
-        {
-          icon: <FaBookOpen/>,
-          name: 'Docs',
-          link: 'https://docs.codecoogs.com/docs/api/introduction',
-        },
-      ],
+        ),
+        content: (
+          <span>
+            GoGo API makes it easier for the officers of Code[Coogs] to manage memberships, events, and more for 200+ members!
+          </span>
+        ),
+        buttons: [
+          {
+            icon: <FaGithub/>,
+            name: 'GitHub',
+            link: 'https://github.com/codecoogs/gogo',
+          },
+          {
+            icon: <FaBookOpen/>,
+            name: 'Docs',
+            link: 'https://docs.codecoogs.com/docs/api/introduction',
+          },
+        ],
     },
 
     {
@@ -65,32 +60,27 @@ export const projectInfo: Project[] = [
         stack: ['TypeScript', 'Discord.js', 'Heroku'],
         description: (
         <span>
-            CoCo is a Discord bot for{' '}
-            <a
-                href='https://www.codecoogs.com/'
-                target='_blank'
-                rel='noopener noreferrer'
-            >
-            Code[Coogs]
-            </a>
-            .
-            <br />
-            <br />
-            CoCo bot allows over 200+ users to verify their membership, view points, and leaderboard!
+            A Discord bot for{' '}
+            <a href='https://www.codecoogs.com/' target='_blank' rel='noopener noreferrer'>Code[Coogs]</a>.
         </span>
-      ),
-      buttons: [
-        {
-          icon: <FaGithub/>,
-          name: 'GitHub',
-          link: 'https://github.com/codecoogs/bot',
-        },
-        {
-          icon: <FaBookOpen/>,
-          name: 'Docs',
-          link: 'https://docs.codecoogs.com/docs/bot/introduction',
-        },
-      ],
+        ),
+        content: (
+          <span>
+              CoCo bot allows over 200+ users to verify their membership, view points, and leaderboard!
+          </span>
+        ),
+        buttons: [
+          {
+            icon: <FaGithub/>,
+            name: 'GitHub',
+            link: 'https://github.com/codecoogs/bot',
+          },
+          {
+            icon: <FaBookOpen/>,
+            name: 'Docs',
+            link: 'https://docs.codecoogs.com/docs/bot/introduction',
+          },
+        ],
     },
 
     {
@@ -100,19 +90,23 @@ export const projectInfo: Project[] = [
       stack: ['Go', 'Bubbletea', 'GoReleaser'],
       description: (
       <span>
-          Ube (ooh-bay) is a program that displays statistics about your code. Ube will show the number of files, and total lines within those files grouped by language.
-          <br />
-          <br />
-          Ube can scan millions of lines of code in seconds and outputs the results in a user-friendly format! Version 2.0.0 is available to MacOS, Linux, and Windows!
+          A command line tool used to count files and lines of code (CLOC)
       </span>
-    ),
-    buttons: [
-      {
-        icon: <FaGithub/>,
-        name: 'GitHub',
-        link: 'https://github.com/ramirezfernando/ube',
-      },
-    ],
+      ),
+      content: (
+        <span>
+          Ube will show the number of files, and total lines within those files grouped by language. 
+          It can scan millions of lines of code in seconds and outputs the results in a user-friendly format! 
+          Version 2.0.0 is available to MacOS, Linux, and Windows!
+        </span>
+      ),
+      buttons: [
+        {
+          icon: <FaGithub/>,
+          name: 'GitHub',
+          link: 'https://github.com/ramirezfernando/ube',
+        },
+      ],
   },
 
     {
@@ -122,19 +116,20 @@ export const projectInfo: Project[] = [
         stack: ['C++', 'SDL2'],
         description: (
         <span>
-            Fernhelm is a 2D, 2-player local co-op turn-based battle game.
-
-            <br />
-            <br />
-            Players take turns moving their characters and attacking each other. The game ends when one player's health reaches 0!
+            A 2D, 2-player local co-op turn-based battle game.
         </span>
-      ),
-      buttons: [
-        {
-          icon: <FaGithub/>,
-          name: 'GitHub',
-          link: 'https://github.com/ramirezfernando/fernhelm',
-        },
-      ],
+        ),
+        content: (
+          <span>
+            Players take turns moving their characters and attacking each other. The game ends when one player's health reaches 0!
+          </span>
+        ),
+        buttons: [
+          {
+            icon: <FaGithub/>,
+            name: 'GitHub',
+            link: 'https://github.com/ramirezfernando/fernhelm',
+          },
+        ],
     },
 ];
