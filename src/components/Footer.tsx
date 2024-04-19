@@ -14,27 +14,27 @@ const Footer = () => {
             <p className='items-center'>Made with &nbsp; <FaReact /> &nbsp; by Fernando</p>
           </div>
         </Hidden>
-        <div className='footer-links-container gap-1'>
+        <div className='footer-links-container'>
 
-          <Button variant="outline" size="icon" className="h-14 w-14 rounded-xl">
+          <Button variant="ghost" size="icon" className="h-14 w-14 rounded-xl">
             <a href='https://github.com/ramirezfernando' target='_blank' rel='noopener noreferrer'>
             <FaGithub className="h-7 w-7"/>
             </a>
           </Button>
 
-          <Button variant="outline" size="icon" className="h-14 w-14 rounded-xl">
+          <Button variant="ghost" size="icon" className="h-14 w-14 rounded-xl">
             <a href='mailto:ramirez.fernando2003@gmail.com' target='_blank' rel='noopener noreferrer'>
               <IoMdMail className="h-7 w-7" />
             </a>
           </Button>
 
-          <Button variant="outline" size="icon" className="h-14 w-14 rounded-xl">
+          <Button variant="ghost" size="icon" className="h-14 w-14 rounded-xl">
             <a href='https://linkedin.com/in/fndo/' target='_blank' rel='noopener noreferrer'>
               <FaLinkedin className="h-7 w-7" />
             </a>
           </Button>
 
-          <Button variant="outline" size='icon' className="h-14 w-14 rounded-xl">
+          <Button variant="ghost" size='icon' className="h-14 w-14 rounded-xl">
             <a href='https://raw.githubusercontent.com/ramirezfernando/resume/main/Fernando_Ramirez_Resume.png' target='_blank' rel='noopener noreferrer'>
             <FileText className="h-7 w-7" />
             </a>
