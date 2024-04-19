@@ -4,6 +4,11 @@ import Fade from "@mui/material/Fade";
 
 import "../styles/About.css";
 import fern from '../assets/fern.jpeg';
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "@/components/ui/avatar"
 
 const About = () => {
   return (
@@ -29,11 +34,10 @@ const About = () => {
           }}
         >
             {/* TODO: Lazy load image*/}
-              <img
-                style={{ opacity: 1 }}
-                src={fern}
-                alt="me"
-              />
+            <Avatar className='w-[200px] h-[200px]'>
+              <AvatarImage src={fern} alt="@shadcn" />
+              <AvatarFallback>FR</AvatarFallback>
+            </Avatar>
         </Grid>
         <Grid item sm={12} md={8}>
           <Fade in timeout={{ enter: 1200 }}>

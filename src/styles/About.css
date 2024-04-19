@@ -7,14 +7,6 @@
     width: 100%;
   }
   
-  .about-container img {
-    border: 1px solid var(--dark-gray);
-
-    border-radius: 100px;
-    width: 200px;
-    height: 200px;
-  }
-  
   .about-container p {
     color: var(--white-almost);
     font-family: 'Varela Round';
