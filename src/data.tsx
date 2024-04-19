@@ -14,7 +14,7 @@ export interface ButtonType {
 }
 
 export interface Project {
-    image: string;
+    image?: string;
     name: string;
     type: string;
     stack: string[];
@@ -97,7 +97,7 @@ export const projectInfo: Project[] = [
         <span>
           Ube will show the number of files, and total lines within those files grouped by language. 
           It can scan millions of lines of code in seconds and outputs the results in a user-friendly format! 
-          Version 2.0.0 is available to MacOS, Linux, and Windows!
+          Version 2.0.0 is available on MacOS, Linux, and Windows!
         </span>
       ),
       buttons: [
@@ -107,7 +107,7 @@ export const projectInfo: Project[] = [
           link: 'https://github.com/ramirezfernando/ube',
         },
       ],
-  },
+    },
 
     {
         image: RPG,
@@ -132,4 +132,27 @@ export const projectInfo: Project[] = [
           },
         ],
     },
+
+    {
+      name: 'Autosudoku',
+      type: 'Sudoku solver',
+      stack: ['Python', 'PyAutoGUI', 'PyTest'],
+      description: (
+      <span>
+          A program that automates the solving of web-based sudoku puzzles.
+      </span>
+      ),
+      content: (
+        <span>
+          Open a sudoku puzzle in your browser, run the program and enter the board into the terminal, and watch the magic happen!
+        </span>
+      ),
+      buttons: [
+        {
+          icon: <FaGithub/>,
+          name: 'GitHub',
+          link: 'https://github.com/ramirezfernando/autosudoku',
+        },
+      ],
+  },
 ];
