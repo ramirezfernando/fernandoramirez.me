@@ -1,7 +1,6 @@
 import React from 'react';
 import { projectInfo, Project, ButtonType } from '../data';
 import Fade from '@mui/material/Fade';
-import { FaGithub } from "react-icons/fa";
 import '../styles/Projects.css';
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
