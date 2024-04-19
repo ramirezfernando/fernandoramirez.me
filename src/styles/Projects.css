@@ -1,6 +1,6 @@
 .projects-container {
   display: flex;
-  min-height: calc(100vh - 13rem);
+  min-height: calc(100vh - 10rem - 35px);
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
