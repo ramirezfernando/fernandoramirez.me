@@ -1,10 +1,8 @@
 import { FaLinkedin, FaGithub, FaReact } from 'react-icons/fa';
-import { RiNewspaperLine } from "react-icons/ri";
 import { IoMdMail } from 'react-icons/io';
 import Hidden from '@mui/material/Hidden';
-import Tooltip from '@mui/material/Tooltip';
 import { Button } from "@/components/ui/button"
-import { StickyNote } from 'lucide-react';
+import { FileText } from 'lucide-react';
 
 import '../styles/Footer.css';
 
@@ -38,7 +36,7 @@ const Footer = () => {
 
           <Button variant="outline" size='icon' className="h-14 w-14 rounded-xl">
             <a href='https://raw.githubusercontent.com/ramirezfernando/resume/main/Fernando_Ramirez_Resume.png' target='_blank' rel='noopener noreferrer'>
-            <StickyNote className="h-7 w-7" />
+            <FileText className="h-7 w-7" />
             </a>
           </Button>
         
