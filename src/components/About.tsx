@@ -106,12 +106,14 @@ const About = () => {
                   projects
                 </Link>{" "}
                 and feel free to{" "}
-                <Link
-                  to={`/contact`}
+                <a
+                  href="https://www.linkedin.com/in/fndo/"
                   className='underline-offset-4'
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   connect!
-                </Link>
+                </a>
               </p>
             </div>
           </Fade>
