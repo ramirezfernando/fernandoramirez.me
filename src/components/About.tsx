@@ -1,16 +1,15 @@
 import { Link } from 'react-router-dom';
 import Grid from "@mui/material/Grid";
 import Fade from "@mui/material/Fade";
+import { Button } from "@/components/ui/button"
 
 import "../styles/About.css";
 import { PURPLE } from "../constants";
 import fern from '../assets/fern.jpeg';
-import MicrosoftLogo from '../assets/microsoft.jpg';
-import AWSLogo from '../assets/aws.png';
 
 const About = () => {
   return (
-    <div className="about-container">
+    <div className="about-container px-4 md:px-0">
       <Grid
         container
         style={{
@@ -54,7 +53,7 @@ const About = () => {
                 {' '} Currently, I work as a teaching assistant for{" "}
                 <a
                   href="https://publications.uh.edu/preview_course_nopop.php?catoid=44&coid=210742"
-                  style={{ color: PURPLE }}
+                  className='underline-offset-4'
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -65,28 +64,27 @@ const About = () => {
                 After graduation, I'll be joining {" "}
                 <a
                   href="https://www.microsoft.com/en-us/"
-                  style={{ color: PURPLE }}
+                  className='underline-offset-4'
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                Microsoft <img id='microsoft-logo' src={MicrosoftLogo}/>
+                Microsoft
                 </a>
-                {" "}
-                 as a software engineer.
+                {" "}as a software engineer.
                 
                 I've previously worked as a software engineer intern at {" "}
                 <a
                   href="https://aws.amazon.com/"
-                  style={{ color: PURPLE }}
+                  className='underline-offset-4'
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Amazon Web Services <img id='aws-logo' src={AWSLogo}/>
+                  Amazon Web Services (AWS)
                 </a>
                 {" "} on the {" "}
                 <a
                   href="https://aws.amazon.com/blogs/mt/announcing-aws-cloudtrail-lake-a-managed-audit-and-security-lake/"
-                  style={{ color: PURPLE }}
+                  className='underline-offset-4'
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -101,20 +99,14 @@ const About = () => {
                 Check out some of my past{" "}
                 <Link
                   to={`/projects`}
-                  style={{
-                    color: PURPLE,
-                  }}
-                  className="internal-link"
+                  className='underline-offset-4'
                 >
                   projects
                 </Link>{" "}
                 and feel free to{" "}
                 <Link
                   to={`/contact`}
-                  style={{
-                    color: PURPLE,
-                  }}
-                  className="internal-link"
+                  className='underline-offset-4'
                 >
                   connect!
                 </Link>

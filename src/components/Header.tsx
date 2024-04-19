@@ -17,7 +17,7 @@ interface HeaderLinkProps {
 const HeaderLink = (props: HeaderLinkProps) => {
     const link = props.title === 'Fernando Ramirez' ? 'about' : props.title;
     return (
-        <div className='header-link'>
+        <div className='header-link text-3xl'>
             <NavLink
                 to={link === 'blog' ? 'https://blog.fernandoramirez.me/' : `/${link}`}
                 target={link === 'blog' ? '_blank' : ''}
@@ -81,15 +81,6 @@ const Header = () => {
                 selected={selectedPage === 'projects'}
                 handleSelect={handleSelect}
             />
-
-            <h3 id='slash'>/</h3>
-
-            <HeaderLink
-                title='contact'
-                color={ALMOST_WHITE}
-                selected={selectedPage === 'contact'}
-                handleSelect={handleSelect}
-            /> 
 
             <h3 id='slash'>/</h3>
 

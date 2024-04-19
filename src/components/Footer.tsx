@@ -3,6 +3,8 @@ import { RiNewspaperLine } from "react-icons/ri";
 import { IoMdMail } from 'react-icons/io';
 import Hidden from '@mui/material/Hidden';
 import Tooltip from '@mui/material/Tooltip';
+import { Button } from "@/components/ui/button"
+import { StickyNote } from 'lucide-react';
 
 import '../styles/Footer.css';
 
@@ -11,58 +13,35 @@ const Footer = () => {
       <div className='footer-container'>
         <Hidden xsDown>
           <div className='footer-copyright'>
-            <p>Made with <FaReact /> by Fernando</p>
+            <p className='items-center'>Made with &nbsp; <FaReact /> &nbsp; by Fernando</p>
           </div>
         </Hidden>
-        <div className='footer-links-container'>
-          
-          <div className='footer-link github'>
-          <Tooltip title='GitHub' placement='top' arrow>
-            <a
-              href='https://github.com/ramirezfernando'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <FaGithub style={{ animationDelay: '100ms' }} />
-            </a>
-          </Tooltip>
-        </div>
+        <div className='footer-links-container gap-1'>
 
-        <div className='footer-link email'>
-          <Tooltip title='Email' placement='top' arrow>
-            <a
-              href='mailto:ramirez.fernando2003@gmail.com'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <IoMdMail style={{ animationDelay: '200ms' }} size='1.7rem' />
+          <Button variant="outline" size="icon" className="h-14 w-14 rounded-xl">
+            <a href='https://github.com/ramirezfernando' target='_blank' rel='noopener noreferrer'>
+            <FaGithub className="h-7 w-7"/>
             </a>
-          </Tooltip>
-        </div>
+          </Button>
 
-        <div className='footer-link linkedin'>
-          <Tooltip title='LinkedIn' placement='top' arrow>
-            <a
-              href='https://linkedin.com/in/fndo/'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <FaLinkedin style={{ animationDelay: '300ms' }} size='1.7rem' />
+          <Button variant="outline" size="icon" className="h-14 w-14 rounded-xl">
+            <a href='mailto:ramirez.fernando2003@gmail.com' target='_blank' rel='noopener noreferrer'>
+              <IoMdMail className="h-7 w-7" />
             </a>
-          </Tooltip>
-        </div>
+          </Button>
 
-        <div className='footer-link resume'>
-          <Tooltip title='Resume' placement='top' arrow>
-            <a
-              href='https://raw.githubusercontent.com/ramirezfernando/resume/main/Fernando_Ramirez_Resume.png'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <RiNewspaperLine style={{ animationDelay: '300ms' }} size='1.7rem' />
+          <Button variant="outline" size="icon" className="h-14 w-14 rounded-xl">
+            <a href='https://linkedin.com/in/fndo/' target='_blank' rel='noopener noreferrer'>
+              <FaLinkedin className="h-7 w-7" />
             </a>
-          </Tooltip>
-        </div>
+          </Button>
+
+          <Button variant="outline" size='icon' className="h-14 w-14 rounded-xl">
+            <a href='https://raw.githubusercontent.com/ramirezfernando/resume/main/Fernando_Ramirez_Resume.png' target='_blank' rel='noopener noreferrer'>
+            <StickyNote className="h-7 w-7" />
+            </a>
+          </Button>
+        
         </div>
       </div>
     );

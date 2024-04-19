@@ -24,6 +24,8 @@
     font-size: small;
     animation-name: fadeIn;
     animation-duration: 0.5s;
+    display: flex;
+    flex-direction: row;
     opacity: 0;
     animation-fill-mode: forwards;
     cursor: default;
@@ -44,35 +46,4 @@
     right: 2rem;
     display: flex;
     align-items: center;
-  }
-  
-  .footer-link {
-    margin: 0px 0.7rem 0px;
-    cursor: pointer;
-    color: var(--light-gray);
-  }
-  
-  .footer-link svg {
-    transition: transform 0.15s;
-    animation-name: fadeIn;
-    animation-duration: 0.3s;
-    opacity: 0;
-    animation-fill-mode: forwards;
-    fill: var(--light-gray);
-  }
-  
-  .github:hover svg {
-    fill: var(--dark-gray);
-  }
-  
-  .email:hover svg {
-    fill: var(--light-pink);
-  }
-  
-  .linkedin:hover svg {
-    fill: var(--blue);
-  }
-
-  .resume:hover svg {
-    fill: var(--light-purple);
   }

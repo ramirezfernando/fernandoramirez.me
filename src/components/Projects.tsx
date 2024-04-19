@@ -1,125 +1,56 @@
 import React from 'react';
-import { projectInfo, Project, Button } from '../constants';
+import { projectInfo, Project } from '../constants';
 import Fade from '@mui/material/Fade';
 import Hidden from '@mui/material/Hidden';
-import { FaAngleRight } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import {
   PURPLE,
 } from '../constants';
 import '../styles/Projects.css';
+import { Button } from "@/components/ui/button"
+
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 
 const Projects: React.FC = () => {
-  const projectsCardContainer: React.CSSProperties = {
-    display: 'flex',
-    justifyContent: 'space-between',
-  };
-
-  const projectDetails: React.CSSProperties = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'flex-start',
-    gap: '16px',
-  };
-
-  const renderLinks = (buttons: Button[]) =>
-    buttons.map((button, index) => {
-      const { name, link } = button;
-
-      return (
-        <a key={index} href={link} target='_blank' rel='noopener noreferrer'>
-          <div className='ProjectsCard-left-buttons-button'>
-            <span>{name}</span>
-            <FaAngleRight/>
-          </div>
-        </a>
-      );
-    });
 
   return (
     <Fade in timeout={{ enter: 1200 }}>
-      <div className='projects-container'>
-        <Hidden smDown>
-          {projectInfo.map((project: Project, index: number) => {
-            const {
-              color,
-              image,
-              name,
-              type,
-              stack,
-              description,
-              buttons,
-            } = project;
-
-            return (
-              <div key={index} style={projectsCardContainer} className='ProjectsCard'>
-                <div className='ProjectsCard-left'>
-                    <img
-                    style={{
-                        opacity: 1,
-                    }}
-                    src={image}
-                    alt='project'
-                    />
-        
-                  <div className='ProjectsCard-left-info' style={projectDetails}>
-                    <span className='ProjectsCard-left-info-left'>type</span>
-                    <span className='ProjectsCard-left-info-right' style={{ color: PURPLE }}>
-                      {type}
-                    </span>
-                    <span className='ProjectsCard-left-info-left'>stack</span>
-                    <span className='ProjectsCard-left-info-right' style={{ color: PURPLE }}>
-                      {stack}
-                    </span>
-                  </div>
-                  <div className='ProjectsCard-left-buttons'>{renderLinks(buttons)}</div>
-                </div>
-                <div
-                  className='ProjectsCard-center'
-                  style={{ backgroundColor: color }}
-                ></div>
-                <div className='ProjectsCard-right'>
-                  <span className='ProjectsCard-right-header'>{name}</span>
-                  <p>{description}</p>
-                </div>
-              </div>
-            );
-          })}
-        </Hidden>
-        <Hidden mdUp>
-          {projectInfo.map((project: Project, index: number) => {
-            const {
-              color,
-              name,
-              type,
-              stack,
-              description,
-              buttons,
-            } = project;
-
-            return (
-              <div key={index} className='ProjectsCardMobile'>
-                <span className='ProjectsCardMobile-header'>{name}</span>
-
-                <div className='ProjectsCardMobile-grid'>
-                  <span className='ProjectsCardMobile-grid-left'>type</span>
-                  <span className='ProjectsCardMobile-grid-right' style={{ color }}>
-                    {type}
-                  </span>
-                  <span className='ProjectsCardMobile-grid-left'>stack</span>
-                  <span className='ProjectsCardMobile-grid-right' style={{ color }}>
-                    {stack}
-                  </span>
-                </div>
-                <div className='ProjectsCardMobile-buttons'>{renderLinks(buttons)}</div>
-                <div
-                  className='ProjectsCardMobile-center'
-                  style={{ backgroundColor: color }}
-                ></div>
-                <p>{description}</p>
-              </div>
-            );
-          })}
-        </Hidden>
+      <div className='projects-container rounded-lg mt-10'>
+  
+            {projectInfo.map((project: Project, index: number) => (
+              <React.Fragment key={index}>
+                <Card className="md:w-2/3 text-left mb-10 mx-4 md:mx-0">
+                  <CardHeader>
+                    <CardTitle className='text-4xl'>{project.name}</CardTitle>
+                    <CardDescription className='text-2xl'>{project.description}</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <form>
+                      <div className="grid w-full items-center gap-4">
+                        <div className="flex flex-col space-y-1.5">
+                          
+                        </div>
+                        <div className="flex flex-col space-y-1.5">
+                          
+                        </div>
+                      </div>
+                    </form>
+                  </CardContent>
+                  <CardFooter className="flex justify-between">
+                    <a href={project.buttons[0].link} target="_blank" rel="noopener noreferrer">
+                      <Button className='gap-3 text-xl'><FaGithub/>GitHub</Button>
+                    </a>
+                  </CardFooter>
+                </Card>
+              </React.Fragment>
+            ))}
       </div>
     </Fade>
   );

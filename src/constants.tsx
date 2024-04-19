@@ -9,7 +9,7 @@ export const PURPLE = '#635bff';
 export const LIGHT_GRAY = '#D9D9D9';
 export const ALMOST_WHITE = '#F5F5F5';
 
-export interface Button {
+export interface ButtonType {
   name: string;
   link: string;
 }
@@ -21,7 +21,7 @@ export interface Project {
     type: string;
     stack: any;
     description: React.ReactNode;
-    buttons: Button[];
+    buttons: ButtonType[];
   }
   
 export const projectInfo: Project[] = [
@@ -38,7 +38,6 @@ export const projectInfo: Project[] = [
                 href='https://www.codecoogs.com/'
                 target='_blank'
                 rel='noopener noreferrer'
-                style={{ color: PURPLE }}
             >
             Code[Coogs]
             </a>
@@ -69,7 +68,6 @@ export const projectInfo: Project[] = [
                 href='https://www.codecoogs.com/'
                 target='_blank'
                 rel='noopener noreferrer'
-                style={{ color: PURPLE }}
             >
             Code[Coogs]
             </a>

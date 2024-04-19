@@ -27,7 +27,7 @@ body {
 }
 
 :root {
-  --black: #181818;
+  --black: #09090b;
   --dark-gray: hsla(0, 0%, 100%, .25);
   --dark-pink: #ff7c7c;
   --light-pink: #ffb6b9;
