@@ -47,23 +47,12 @@ const About = () => {
                 <span className="wave" role="img" aria-label="wave">
                   👋🏼
                 </span>{" "}
-                I'm Fernando, a senior at the University of Houston studying CS. 
+                I'm Fernando, a recent CS graduate from the University of Houston. 
                 I'm interested in anything tech &mdash; especially backend development and
                 distributed systems. I love working on projects that have meaningful impact.
                 <br />
                 <br />
-                {' '} Currently, I work as a teaching assistant for{" "}
-                <a
-                  href="https://publications.uh.edu/preview_course_nopop.php?catoid=44&coid=210742"
-                  className='underline-offset-4'
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  COSC 3380: Database Systems
-                </a>
-                {" "}at the University of Houston. 
-                
-                After graduation, I'll be joining {" "}
+                {' '} Currently, I'm a software engineer at {" "} 
                 <a
                   href="https://www.microsoft.com/en-us/"
                   className='underline-offset-4'
@@ -71,9 +60,7 @@ const About = () => {
                   rel="noopener noreferrer"
                 >
                 Microsoft
-                </a>
-                {" "}as a software engineer.
-                
+                </a> {" "} working on developer productivity and tooling for one of the largest monorepos in Office 365. {" "}
                 I've previously worked as a software engineer intern at {" "}
                 <a
                   href="https://aws.amazon.com/"
@@ -92,7 +79,25 @@ const About = () => {
                 >
                   CloudTrail Lake
                 </a>
-                {" "}team, where I worked on improving the free trial for over 1 million customers!
+                {" "}team, where I worked on improving the free trial for over 1 million customers! {" "}            
+                Prior to that, I was a teaching assistant for the following courses: {" "}
+                <a
+                  href="https://cougargrades.io/c/COSC%203380"
+                  className='underline-offset-4'
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  COSC 3380: Database Systems
+                </a>
+                , and {" "}
+                <a
+                  href="https://cougargrades.io/c/COSC%201336"
+                  className='underline-offset-4'
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  COSC 1336: Computer Science and Programming
+                </a>.
                 <br />
                 <br />
                 If I'm not coding away, you can find me playing video games, or finding my new favorite restaurant.
